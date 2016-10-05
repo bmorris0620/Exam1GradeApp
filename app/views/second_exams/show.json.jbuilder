@@ -1,0 +1,1 @@
+json.partial! "second_exams/second_exam", second_exam: @second_exam

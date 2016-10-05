@@ -1,0 +1,1 @@
+json.array! @second_exams, partial: 'second_exams/second_exam', as: :second_exam

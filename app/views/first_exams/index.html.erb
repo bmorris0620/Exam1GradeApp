@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>First Exams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First exam</th>
+      <th>Grade</th>
+      <th>Course</th>
+      <th>Student</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @first_exams.each do |first_exam| %>
+      <tr>
+        <td><%= first_exam.first_exam_id %></td>
+        <td><%= first_exam.grade %></td>
+        <td><%= first_exam.course_id %></td>
+        <td><%= first_exam.student_id %></td>
+        <td><%= link_to 'Show', first_exam %></td>
+        <td><%= link_to 'Edit', edit_first_exam_path(first_exam) %></td>
+        <td><%= link_to 'Destroy', first_exam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New First Exam', new_first_exam_path %>

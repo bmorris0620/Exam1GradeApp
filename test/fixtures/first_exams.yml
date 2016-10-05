@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_exam_id: 1
+  grade: MyString
+  course_id: 1
+  student_id: 1
+
+two:
+  first_exam_id: 1
+  grade: MyString
+  course_id: 1
+  student_id: 1

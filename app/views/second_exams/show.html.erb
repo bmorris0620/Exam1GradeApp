@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Second exam:</strong>
+  <%= @second_exam.second_exam_id %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @second_exam.grade %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @second_exam.course_id %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @second_exam.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_second_exam_path(@second_exam) %> |
+<%= link_to 'Back', second_exams_path %>

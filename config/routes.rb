@@ -1,19 +1,13 @@
 Rails.application.routes.draw do
-  get 'pages/new'
+  get 'welcome/index'
+  root 'welcome#index'
 
-  get 'pages/create'
-
-  get 'pages/view'
-
-  get 'pages/update'
-
-  get 'pages/delete'
-
+  resources :students
+  resources :second_exams
+  resources :quizzes
+  resources :first_exams
+  resources :assignments
+  resources :enrollments
+  resources :courses
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  get 'create' => 'pages#create'
-  get 'view' => 'pages#view'
-  get 'update' => 'pages#update'
-  get 'delete' => 'pages#delete'
-  
 end
